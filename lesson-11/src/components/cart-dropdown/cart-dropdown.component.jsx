@@ -1,5 +1,6 @@
 import React from 'react'; 
  
+import { connect } from 'react-redux';
 
 import CustomButton from '../custom-button/custom-button.component';
 import CartItem from '../cart-item/cart-item.component';
@@ -14,5 +15,7 @@ const CartDropdown = ({ title, items }) => (
 	<CustomButton >Go to checkout</CustomButton> 
   </div>
 );
+
+const mapStateToProps = ()=>();
 
 export default CartDropdown;
